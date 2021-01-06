@@ -1,7 +1,7 @@
 # website
 68618762
 
-## 1. Getting Starter
+## 1. Getting Started
 ### 1.1 Installation options
 * Download final files, use CDN, dowload source files, package managers
 * Regular/grid/reboot/min/map versions of all files (map is original files and are useful in development,
@@ -43,7 +43,7 @@ and through using CSS inheritance whenever possible [easy to override]
 * bg-primary, bg-success, bg-light, bg-dark, bg-transparent, bg-faded
 
 ### 2.6 Work with images
-* img-fluid (automatically adjusts to container, so is responsive)
+* img-fluid (automatically adjusts to the container and is responsive)
 * img-thumbnail
 * rounded-top, rounded-right, rounded-circle, rounded-pill, rounded-0, rounded-sm, rounded-lg
 * float-left, float-right (those are quite useful)
@@ -134,6 +134,7 @@ and through using CSS inheritance whenever possible [easy to override]
 * siz-w/h/mw/mh/vw/vh/min-wv/min-vh/auto(25/50/75/100)
 * vw/vh means viewport width/height
 * mw/mh means max width/height
+* m-0 would clear out the margins
 
 ### 3.16 Using borders
 * border-top/right/bottom/left-primary/secondary/success/danger/warning/info/light/dark/white-0
@@ -141,6 +142,55 @@ and through using CSS inheritance whenever possible [easy to override]
 * `border border-primary`
 * `border rounded-circle` (turns the element into a circle)
 
+## 4. Using Navs and Navbar Components
+### 4.1 Navbar overview
+* The next most important component after the grid
+* Navs are parents to tabs, pills (those change when clicked) and navbars
+
+### 4.2 Create basic navigation
+* can use with ul and li or without
+* nav and nav-item (put inside the link or the li)
+* nav-link, active, disabled
+* nav-pills, nav-tabs
+* can use the justify class for alignment or nav-fill, nav-justified, flex-column, flex-sm-row
+[nav-fill allows the text to be wider, flex-row/column: when should the items stack up]
+* `<li class="nav-item"><a class="nav-link active">...</a></li>`
+* `<a class="nav-item nav-link active">...</a>`
+* `<nav class="nav nav-pills justify-content-end">...</nav>`
+
+### 4.3 Create a navbar
+* navbar-nav with nav-item/nav-link inside
+* navbar-expand-sm
+* bg-color
+* navbar-light/dark
+
+### 4.4 Use branding and text
+* navbar-brand/text (adjusts the given text to the style of the rest of the navbar)
+
+### 4.5 Add a dropdown to navigation
+* dropdown
+* dropdown-toggle (gives the triangle, add to the top item of the menu)
+* dropdown-menu
+* dropdown-item
+* also need `data-toggle="dropdown"` and assign some aria attributes for screenreaders, href must be set to #
+
+### 4.6 Add form elements
+* form-inline inside the form tag
+* form-control inside the input tag
+* btn btn-outline-light inside the button tag
+
+### 4.7 Control positioning
+* `<nav class="navbar sticky-top">`
+
+### 4.8 Create collapsible content
+* collapse navbar-collapse (goes around the content we wish to collapse, that tag also needs the id attribute)
+* navbar-toggler (goes on the button along with data-toggle="collapse" attribute and data-target="#ourId")
+* navbar-toggler-icon (into span, will appear in the written order with respect to navbar-brand)
+
 ## Additional Notes
-* https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file \
+* https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
 * `Set-ExecutionPolicy -Scope LocalMachine Unrestricted`
+* `<nav class="navbar" style="background-color: red">`
+* `<img src="" style="width:80px;" alt="">`
+* `<d-none d-xl-inline-block>` to make things appear/disappear
+* data attributes typically correspond to something with JavaScript
