@@ -10,30 +10,24 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
       crossorigin="anonymous">
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+      crossorigin="anonymous"></script>
+
+    <!-- load elements -->
+    <script> 
+      $(function(){
+        $("#nav").load("nav.html"); 
+      });
+    </script>
+
     <title>Sasha Avreline</title>
   </head>
   <body>
-    <div class="container">
-      <h2 class="mt-4">Sasha Avreline</h2>
-    </div>
+    <div id="nav"></div>
 
-    <!-- nav-tabs nav-pills nav-justified nav-fill justify-content-center -end -->
-    <!-- automatically stack flex-column flex-sm-row -->
-    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
-      <div class="container">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Home</a>
-          <a class="nav-item nav-link" href="#">Education</a>
-          <a class="nav-item nav-link" href="#">Projects</a>
-          <a class="nav-item nav-link" href="#">Experience</a>
-          <a class="nav-item nav-link" href="#">Hobbies</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- The main bootstrap wrapper -->
-    <!-- Some other examples <div class="h1"> <div class="display-1"> -->
+    <!-- container -->
     <div class="container">
     
       <section class="border my-4 p-3 shadow">
@@ -160,13 +154,7 @@
     
     </div><!-- container -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- map: if wish to edit original Saas, min: non customizable version -->
-    <!-- reboot: normalization, consitency accross all browsers 1rem == 16px -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-      crossorigin="anonymous"></script>
+    <!-- BootStrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
       crossorigin="anonymous"></script>
