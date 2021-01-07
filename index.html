@@ -17,23 +17,19 @@
 
     <!-- load elements -->
     <script> 
-      $(function(){
-        $("#nav").load("nav.html"); 
-      });
+        $(function(){
+          $("#header").load("/header.html"); 
+          $("#nav").load("/nav.html");
+          $("#footer").load("/footer.html"); 
+        });
     </script>
-
-    <!-- style -->
-    <style>
-        .lgtext {font-size: 1.2rem;}
-        .nav-link {font-size: 1.1rem !important;}
-    </style>
-
+  
+    <div id="header"></div>
     <title>Sasha Avreline</title>
   </head>
   <body>
     <div id="nav"></div>
 
-    <!-- container -->
     <div class="container">
     
       <section class="border my-4 p-3 shadow">
@@ -47,14 +43,8 @@
           arcu risus commodo lectus, id posuere mi magna fermentum lorem. </p>
       </section>
     
-    </div><!-- container -->
+    </div>
 
-    <!-- BootStrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
-      crossorigin="anonymous"></script>
+    <div id="footer"></div>
   </body>
 </html>

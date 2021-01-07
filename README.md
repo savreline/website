@@ -234,6 +234,43 @@ the bars will be placed next to each other
 * shadow shadow-none shadow-sm shadow-lg
 * can turn shadows on globally using Sass
 
+## 6. Using Layout Component
+### 6.1 Layout components overview
+* Design patterns for common layout tasks
+* Jumbotron: display content at the top of the website
+* Media elements: photos next to text
+
+### 6.2 Add a jumbotron
+* jumbotron jumbotron-fluid (takes up entire space of the parent and doesn't have rounded edges)
+* can be placed inside the header tag
+
+### 6.3 Table styles
+* table table-dark table-striped table-bordered table-borderless table-hover (go inside table tag)
+* thead-light thead-dark (go inside thead tag, -light gives a grayish background)
+* table-color (colors have an additional option -active, color individual rows/columns/cells)
+* bg-color text-color
+* table-sm (less padding) table-responsive-sm (allows to scroll horizontally)
+
+### 6.4 Basic card layouts
+* card card-body card-text card-title card-subtitle card-link
+* bg-color border-color text-color
+* need at least the card and card-body classes
+
+### 6.5 Card content classes
+* card-header card-footer
+* card-img card-img-top card-img-bottom card-img-overlay (makes the image the background)
+* list-group list-group-item list-group-flush (extend to edge of the card and removes unnecessary borders) 
+
+### 6.6 Card layouts
+* card-group card-deck (adds spacing between the columns) card-columns (pintrest style layout)
+* best to use several card-group classes whenever there is a lot of content (or just use the grid)
+* can also use the grid
+
+### 6.7 Use the media object
+* media media-body (make a div for media-body)
+* `<img class="img-fluid w-25 rounded" src="">` makes image 25% of the width of the container or use 
+the style attribute can also add `d-flex align-self-center`
+
 ## Additional Notes
 * https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
 * `Set-ExecutionPolicy -Scope LocalMachine Unrestricted`
