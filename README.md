@@ -39,7 +39,7 @@ and through using CSS inheritance whenever possible [easy to override]
 * px-5, my-1 - add padding, margins to x or y
 
 ### 2.5 Using color with Bootstrap
-* text-primary, text-secondary, text-success, text-warning, text-danger, text-info, text-white, text-body (can redefine using Bootstrap Saas)
+* text-primary, text-secondary, text-success, text-warning, text-danger, text-info, text-white, text-body (can redefine using Bootstrap Sass)
 * bg-primary, bg-success, bg-light, bg-dark, bg-transparent, bg-faded
 
 ### 2.6 Work with images
@@ -186,6 +186,53 @@ and through using CSS inheritance whenever possible [easy to override]
 * collapse navbar-collapse (goes around the content we wish to collapse, that tag also needs the id attribute)
 * navbar-toggler (goes on the button along with data-toggle="collapse" attribute and data-target="#ourId")
 * navbar-toggler-icon (into span, will appear in the written order with respect to navbar-brand)
+
+## 5. Style Element Overview
+### 5.1 Basic style element overview
+* tags are a simple style for organizing content
+* breadcrums are for displaying channels
+
+### 5.2 Create buttons
+* btn btn-sm/lg can be used with a, button or input tags
+* btn-color must be specified
+* btn-outline-color
+* btn-block (for full width of the container)
+* active, disabled
+
+### 5.3 Button groups
+* btn-group btn-group-vertical-sm/lg (stacks buttons in a column)
+* btn-toolbar (to group button groups)
+
+### 5.4 Use badges
+* badge badge-default badge-pill (look like text tags)
+* badge-color
+
+### 5.5 Progress bar styles
+* progress progress-bar progress-bar-striped progress-bar-animated 
+(all those are to be children of the progress class)
+* can put in multiple bars into a single progress class, 
+the bars will be placed next to each other
+* use bg-color to set color
+* `style="width:73%"`
+
+### 5.6 List groups
+* list-group 
+* list-group-item (can be placed inside a, li and button classes)
+* list-group-item-action (gets a hoover class to look like a clickable item)
+* list-group-item-color
+* list-group-horizontal-sm
+* active disabled
+
+### 5.7 Breadcrumbs
+* secondary navigation (links get separated by the "/" divider, override character in CSS)
+* breadcrumb
+* breadcrumb-item
+* active
+* can be placed inside a or li tags
+
+### 5.8 Shadows
+* shadow shadow-none shadow-sm shadow-lg
+* can turn shadows on globally using Sass
 
 ## Additional Notes
 * https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
