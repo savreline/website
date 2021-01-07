@@ -271,6 +271,44 @@ the bars will be placed next to each other
 * `<img class="img-fluid w-25 rounded" src="">` makes image 25% of the width of the container or use 
 the style attribute can also add `d-flex align-self-center`
 
+## 7. Using Form Styles
+### 7.1 Form styles overview
+* inline forms, horizontal layouts, input groups
+
+### 7.2 Create a basic form
+* form-group form-text (goes inside the fieldset tag and any divs that group form components)
+* form-control (goes inside the input, select and textarea tags)
+* form-control-label (goes inside the label tag)
+* form-control-file 
+* fieldset HTML tag groups form components
+* text-muted makes the text smaller
+* sr-only hides the labels
+
+### 7.3 Checkboxes and radio classes
+* form-check form-check-label form-check-input form-check-inline (puts elements side-by-side,
+goes on the parent class, label needs to become a d-block class)
+
+### 7.4 Style options
+* form-control-sm form-control-lg
+* form-inline (only when screen is wide enough)
+
+### 7.5 Multicolumn forms
+* form-row (less room in-between columns) col-auto (just the amount of space of the element)
+* col-form-label (goes on the label)
+* offset subsequent columns to get them to align to the parent label
+
+### 7.6 Create input groups
+* for horizontal inline integrated layout (labels and buttons look integrated into the input field)
+* input-group input-group-prepend input-group-append (goes onto the button) input-group-text
+* preprend: $ (also use a text class), then the amount input field, append: .00 (also use a text class)
+
+### 7.7 Custom form components
+* custom-select/radio/checkbox/switch/range/file-input (switch is like a physical switch)
+* custom-control
+* custom-control-label
+* custom-control-input
+* for attributed links loosely placed labels to ids of the elements they refer to
+
 ## Additional Notes
 * https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
 * `Set-ExecutionPolicy -Scope LocalMachine Unrestricted`
