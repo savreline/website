@@ -11,8 +11,15 @@
       crossorigin="anonymous"></script>
     <script src="/script.js"></script>
   
+    <!-- page-specific scripts -->
+    <script> 
+      function toggleInterns(obj) {
+        obj.innerHTML = (obj.innerHTML == 'Hide') ? 'Show' : 'Hide' ;
+      }    
+    </script>
+
     <div id="header"></div>
-    <title>Sasha Avreline</title>
+    <title>Sasha Avreline: Experience</title>
   </head>
   <body>
     <div id="nav"></div>
@@ -20,10 +27,61 @@
     <!-- main content -->
     <div class="container">
     
-      <section class="border my-4 p-3 shadow">
-        <p></p>
-      </section>
-    
+      <section class="card my-4 shadow">
+        <div class="card-header">
+          <h4 class="card-title">BCS Program Teaching Assistant</h4>
+          <h5 class="card-substitle">University of British Columbia, Vancouver, BC. 2019-2020.</h5>
+        </div>
+        <div class="card-body lgtext">
+          <ul>
+            <li>Developed and delivered review lectures on discrete math, OOP, data structures and algorithms, 
+              low-level and asynchronous programming.</li>
+            <li>Increased review lecture's attendance 5-fold.</li>
+            <li>Recorded lecture for future use.</li>
+            <li>Debugged student's code during office hours.</li>
+          </ul>
+        </div>
+      </section><!-- BCS TA -->
+
+      <section class="card my-4 shadow">
+        <div class="card-header">
+          <h4 class="card-title">Self-Employed</h4>
+        </div>
+        <div class="card-body lgtext">
+          <ul>
+            <li>Undulator project</li>
+            <li>Tutoring</li>
+          </ul>
+        </div>
+      </section><!-- Self-employed -->
+
+      <section class="card my-4 shadow">
+        <div class="card-header">
+          <h4 class="card-title">Research Associate</h4>
+          <h5 class="card-substitle">University of Waterloo, Waterloo, ON. 2010-2011.</h5>
+        </div>
+        <div class="card-body lgtext">
+          <ul>
+            <li>Designed and fabricated innovative electro-mechanical systems
+              that made long-term cell tracking experiments possible.</li>
+            <li>Cultured mammalian cancer and stem cells.</li>
+          </ul>
+        </div>
+      </section><!-- UW -->
+
+      <div class="lgtext">
+        <h5>Five internships in chemical engineering and physics in 2006-2009.
+          <a onClick="javascript:toggleInterns(this);" 
+            href="#" data-toggle="collapse" data-target="#interns">
+            Show
+          </a>
+        </h5>
+      </div>
+
+      <div class="card-body mt-2 collapse" id="interns">
+        Interns
+      </div>
+
     </div><!-- container -->
 
     <div id="footer"></div>

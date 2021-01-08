@@ -1,3 +1,5 @@
 p {font-size: 1.15rem;}
+object {pointer-events: none;}
 .lgtext {font-size: 1.15rem;}
 .nav-link {font-size: 1.15rem !important;}
+.rnd-img {border-radius: 20px;}
