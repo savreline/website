@@ -5,19 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- jQuery -->
+    <!-- load jQuery and elements -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" 
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
       crossorigin="anonymous"></script>
-
-    <!-- load elements -->
-    <script> 
-      $(function(){
-        $("#header").load("../header.html"); 
-        $("#nav").load("../nav.html");
-        $("#footer").load("../footer.html"); 
-      });
-    </script>
+    <script src="/script.js"></script>
 
     <div id="header"></div>
     <title>Sasha Avreline: Projects</title>
@@ -25,24 +17,19 @@
   <body>
     <div id="nav"></div>
 
+    <!-- main content -->
     <div class="container">
     
       <section class="card my-4 shadow">
         <div class="card-header pb-0">
           <h4 class="card-title">Chevrotain: a distributed key-value store</h4>
         </div>
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non imperdiet lectus. 
-          Donec ut ultricies enim. Curabitur maximus gravida lacus, et aliquet urna tincidunt vitae. 
-          Integer justo metus, lacinia sed dapibus et, feugiat in ipsum. Etiam sagittis accumsan turpis
-          viverra dictum. Aliquam ut magna semper, euismod mi quis, sagittis libero. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Aenean blandit diam quam, eu iaculis arcu posuere sit amet. 
-          Sed ultrices lacus eget iaculis vestibulum. Pellentesque leo purus, eleifend nec interdum sit amet, 
-          pretium at justo. Aenean varius fringilla luctus. Vestibulum venenatis, orci eu dapibus interdum, 
-          arcu risus commodo lectus, id posuere mi magna fermentum lorem.</p>
-
-          <strong>Golang and MongoDB.</strong>
-          "Distributed systems abstractions" graduate course individual project. 2020.
+        <div class="card-body text-justify lgtext">
+          <p>An individual course project for the distributed systems abstractions graduate course.
+            <a href="report.pdf">Final Report</a> |
+            <a href="https://github.com/savreline/chevrotain">GitHub</a>
+          </p>
+          <strong>Golang and MongoDB.</strong> 2020.
         </div>
       </section><!-- Chevrotain -->
 
@@ -50,18 +37,12 @@
         <div class="card-header pb-0">
           <h4 class="card-title">"What year was that?" trivia game</h4>
         </div>
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non imperdiet lectus. 
-          Donec ut ultricies enim. Curabitur maximus gravida lacus, et aliquet urna tincidunt vitae. 
-          Integer justo metus, lacinia sed dapibus et, feugiat in ipsum. Etiam sagittis accumsan turpis
-          viverra dictum. Aliquam ut magna semper, euismod mi quis, sagittis libero. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Aenean blandit diam quam, eu iaculis arcu posuere sit amet. 
-          Sed ultrices lacus eget iaculis vestibulum. Pellentesque leo purus, eleifend nec interdum sit amet, 
-          pretium at justo. Aenean varius fringilla luctus. Vestibulum venenatis, orci eu dapibus interdum, 
-          arcu risus commodo lectus, id posuere mi magna fermentum lorem.</p>
-
-          <strong>MERN Stack.</strong>
-          A personal project. 2020.
+        <div class="card-body text-justify lgtext">
+          <p>A personal project.
+            <a href="https://www.savreline.com">savreline.com</a> |
+            <a href="https://github.com/savreline/what-year">GitHub</a>
+          </p>
+          <strong>MERN Stack.</strong> 2020.
         </div>
       </section><!-- what year -->
 
@@ -69,18 +50,11 @@
         <div class="card-header pb-0">
           <h4 class="card-title">Operating system mini-kernel</h4>
         </div>
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non imperdiet lectus. 
-          Donec ut ultricies enim. Curabitur maximus gravida lacus, et aliquet urna tincidunt vitae. 
-          Integer justo metus, lacinia sed dapibus et, feugiat in ipsum. Etiam sagittis accumsan turpis
-          viverra dictum. Aliquam ut magna semper, euismod mi quis, sagittis libero. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Aenean blandit diam quam, eu iaculis arcu posuere sit amet. 
-          Sed ultrices lacus eget iaculis vestibulum. Pellentesque leo purus, eleifend nec interdum sit amet, 
-          pretium at justo. Aenean varius fringilla luctus. Vestibulum venenatis, orci eu dapibus interdum, 
-          arcu risus commodo lectus, id posuere mi magna fermentum lorem.</p>
-
-          <strong>C and X86-32 assembly.</strong>
-          "Advanced operating systems" course project, done in pairs. 2019.
+        <div class="card-body text-justify lgtext">
+          <p>A course project for the advanced operating systems course. Implemented an operating system
+            mini-kernel consisting of memory management, process scheduling, process communication and a
+            keyboard device driver.</p>
+          <strong>C and X86-32 assembly.</strong> Done in pairs. 2019.
         </div>
       </section><!-- os kernel -->
 
@@ -88,18 +62,11 @@
         <div class="card-header pb-0">
           <h4 class="card-title">Mini-Java compiler</h4>
         </div>
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non imperdiet lectus. 
-          Donec ut ultricies enim. Curabitur maximus gravida lacus, et aliquet urna tincidunt vitae. 
-          Integer justo metus, lacinia sed dapibus et, feugiat in ipsum. Etiam sagittis accumsan turpis
-          viverra dictum. Aliquam ut magna semper, euismod mi quis, sagittis libero. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Aenean blandit diam quam, eu iaculis arcu posuere sit amet. 
-          Sed ultrices lacus eget iaculis vestibulum. Pellentesque leo purus, eleifend nec interdum sit amet, 
-          pretium at justo. Aenean varius fringilla luctus. Vestibulum venenatis, orci eu dapibus interdum, 
-          arcu risus commodo lectus, id posuere mi magna fermentum lorem.</p>
-
-          <strong>Java and X86-64 assembly.</strong>
-          "Introduction to compliers" course project, done in groups of three. 2019.
+        <div class="card-body text-justify lgtext">
+          <p>A course project for the introduction to compilers course. Implementated a compiler 
+            for a subset of the Java PL consisting of a parser, type checker, translator to intermediate
+            representation, instruction selector and a register allocator.</p>
+          <strong>Java and X86-64 assembly.</strong> Done in groups of three. 2019.
         </div>
       </section><!-- mini Java -->
 
@@ -107,17 +74,11 @@
         <div class="card-header pb-0">
           <h4 class="card-title">Course notes on algorithms</h4>
         </div>
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non imperdiet lectus. 
-          Donec ut ultricies enim. Curabitur maximus gravida lacus, et aliquet urna tincidunt vitae. 
-          Integer justo metus, lacinia sed dapibus et, feugiat in ipsum. Etiam sagittis accumsan turpis
-          viverra dictum. Aliquam ut magna semper, euismod mi quis, sagittis libero. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Aenean blandit diam quam, eu iaculis arcu posuere sit amet. 
-          Sed ultrices lacus eget iaculis vestibulum. Pellentesque leo purus, eleifend nec interdum sit amet, 
-          pretium at justo. Aenean varius fringilla luctus. Vestibulum venenatis, orci eu dapibus interdum, 
-          arcu risus commodo lectus, id posuere mi magna fermentum lorem.</p>
-
-          A personal project. 2019-2020.
+        <div class="card-body text-justify lgtext">
+          <p>A personal project.
+            <a href="320notes.pdf">Notes</a>
+          </p>
+          2019-2020.
         </div>
       </section><!-- 320 -->
 
@@ -125,17 +86,13 @@
         <div class="card-header pb-0">
           <h4 class="card-title">Video tutorials and notes on C/C++</h4>
         </div>
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non imperdiet lectus. 
-          Donec ut ultricies enim. Curabitur maximus gravida lacus, et aliquet urna tincidunt vitae. 
-          Integer justo metus, lacinia sed dapibus et, feugiat in ipsum. Etiam sagittis accumsan turpis
-          viverra dictum. Aliquam ut magna semper, euismod mi quis, sagittis libero. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Aenean blandit diam quam, eu iaculis arcu posuere sit amet. 
-          Sed ultrices lacus eget iaculis vestibulum. Pellentesque leo purus, eleifend nec interdum sit amet, 
-          pretium at justo. Aenean varius fringilla luctus. Vestibulum venenatis, orci eu dapibus interdum, 
-          arcu risus commodo lectus, id posuere mi magna fermentum lorem.</p>
-
-          Part completed while employed as a BCS tutor, part is a personal project. 2019-2020.
+        <div class="card-body text-justify lgtext">
+          <p>Part completed while employed as a BCS tutor, part is a personal project.
+            <a href="SubtletiesOfC.pdf">Notes</a> |
+            <a href="https://youtube.com/playlist?list=PL95pE3U4irsbVDpYt2H_rbL1MN4FaZgbN">YouTube Playlist</a> |
+            <a href="https://github.com/savreline/cpp">GitHub</a>
+          </p>
+          2019-2020.
         </div>
       </section><!-- C/C++ -->
 
@@ -143,18 +100,11 @@
         <div class="card-header pb-0">
           <h4 class="card-title">Mathematical model of TRIUMF cyclotron's cryogenic system</h4>
         </div>
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non imperdiet lectus. 
-          Donec ut ultricies enim. Curabitur maximus gravida lacus, et aliquet urna tincidunt vitae. 
-          Integer justo metus, lacinia sed dapibus et, feugiat in ipsum. Etiam sagittis accumsan turpis
-          viverra dictum. Aliquam ut magna semper, euismod mi quis, sagittis libero. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Aenean blandit diam quam, eu iaculis arcu posuere sit amet. 
-          Sed ultrices lacus eget iaculis vestibulum. Pellentesque leo purus, eleifend nec interdum sit amet, 
-          pretium at justo. Aenean varius fringilla luctus. Vestibulum venenatis, orci eu dapibus interdum, 
-          arcu risus commodo lectus, id posuere mi magna fermentum lorem.</p>
-
-          <strong>MATLAB.</strong>
-          From a 4-month internship at TRIUMF. 2016.
+        <div class="card-body text-justify lgtext">
+          <p>Model built during the 4-month internship at TRIUMF.
+            Model is based on thermodynamics and heat transfer fundamentals.
+            Applied to calculate heat losses from the cryogenic system.</p>
+          <strong>MATLAB.</strong> 2016.
         </div>
       </section><!-- TRIUMF -->
 
@@ -162,18 +112,11 @@
         <div class="card-header pb-0">
           <h4 class="card-title">Mathematical model of growth factor delivery to stem cells</h4>
         </div>
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non imperdiet lectus. 
-          Donec ut ultricies enim. Curabitur maximus gravida lacus, et aliquet urna tincidunt vitae. 
-          Integer justo metus, lacinia sed dapibus et, feugiat in ipsum. Etiam sagittis accumsan turpis
-          viverra dictum. Aliquam ut magna semper, euismod mi quis, sagittis libero. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Aenean blandit diam quam, eu iaculis arcu posuere sit amet. 
-          Sed ultrices lacus eget iaculis vestibulum. Pellentesque leo purus, eleifend nec interdum sit amet, 
-          pretium at justo. Aenean varius fringilla luctus. Vestibulum venenatis, orci eu dapibus interdum, 
-          arcu risus commodo lectus, id posuere mi magna fermentum lorem.</p>
-
-          <strong>MATLAB.</strong>
-          From full-time employement and an internship at the University of Waterloo. 2009-2011.
+        <div class="card-body text-justify lgtext">
+          <p>Model built throughout full-time employement and an internship at the University of Waterloo. 
+            Model is based on 3D reaction-diffusion equations, optimal solutions formed a significant
+            contributions to a research fellow's Ph.D. thesis at the University of Waterloo.</p>
+          <strong>MATLAB.</strong> 2009-2011.
         </div>
       </section><!-- stem cells -->
   

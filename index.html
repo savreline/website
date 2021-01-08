@@ -5,45 +5,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
-      crossorigin="anonymous">
-
-    <!-- jQuery -->
+    <!-- load jQuery and elements -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" 
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
       crossorigin="anonymous"></script>
-
-    <!-- load elements -->
-    <script> 
-        $(function(){
-          $("#header").load("/header.html"); 
-          $("#nav").load("/nav.html");
-          $("#footer").load("/footer.html"); 
-        });
-    </script>
+    <script src="/script.js"></script>
   
+    <!-- page-specific style -->
+    <style>
+        img {border-radius: 20px;}
+    </style>
+
     <div id="header"></div>
     <title>Sasha Avreline</title>
   </head>
   <body>
     <div id="nav"></div>
 
+    <!-- main content -->
     <div class="container">
+        <section class="media my-4">
+            <img class="w-50 mr-4"
+                src="photo.jpg" alt="Sasha Avreline's Photo">
+            <div class="media-body text-justify lgtext">
+                <p>I am a recent graduate from the Bachelor of Computer Science program at UBC with 
+                  prior education and experience in advanced mathematics, physics, chemical and 
+                  biomedical engineering. </p>
+                <p>My recent focus in computer science has been in the areas of distributed systems,
+                  computer networks and operating systems. However, I do have some exposure to 
+                  full stack developement, machine learning, statistics, graphics and PL theory. </p> 
+                <p>I am always eager to learn new technologies and learn them well! I pay strong 
+                  attention to detail and take pride in the quality of finished product.</p>
+                <a href="https://github.com/savreline/">GitHub</a>
+            </div>
+        </section>
     
-      <section class="border my-4 p-3 shadow">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non imperdiet lectus. 
-          Donec ut ultricies enim. Curabitur maximus gravida lacus, et aliquet urna tincidunt vitae. 
-          Integer justo metus, lacinia sed dapibus et, feugiat in ipsum. Etiam sagittis accumsan turpis
-          viverra dictum. Aliquam ut magna semper, euismod mi quis, sagittis libero. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Aenean blandit diam quam, eu iaculis arcu posuere sit amet. 
-          Sed ultrices lacus eget iaculis vestibulum. Pellentesque leo purus, eleifend nec interdum sit amet, 
-          pretium at justo. Aenean varius fringilla luctus. Vestibulum venenatis, orci eu dapibus interdum, 
-          arcu risus commodo lectus, id posuere mi magna fermentum lorem. </p>
-      </section>
-    
-    </div>
+    </div><!-- container -->
 
     <div id="footer"></div>
   </body>
