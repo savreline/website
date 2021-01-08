@@ -309,6 +309,109 @@ goes on the parent class, label needs to become a d-block class)
 * custom-control-input
 * for attributed links loosely placed labels to ids of the elements they refer to
 
+## 8. Working with Interactive Components
+### 8.1 Interactive component overview
+* Work with JS and jQuerry
+* Alerts - e.g. form validation messages, closable messages
+* Modals - full page alerts and dialog boxes with images and additional content
+* Carousel - rotate through images
+* Scrollspy - inject classes into the page to highlight things as you scroll
+(e.g. highlight parts of the nav bar)
+
+### 8.2 Add tooltips
+* use only on links or controls
+* `data-toogle="tooltip" title="text"`
+* data-placement (top/right/bottom/left of the referring text)
+* data-trigger (click/hover/focus)
+* data-html (true/false) when adding html to the tooltip
+* need an additional jQuery function to activate tooltips and optionally pass a config object
+
+### 8.3 Display popovers
+* `data-toogle="popover" title="text" data-content="content"` (content is the body under the title)
+* data-placement
+* data-trigger
+* data-container
+* similar activation process
+
+### 8.4 Create alerts
+* alert alert-color 
+* alert-heading alert-link
+* alert-dismissible fade show (adds animation, added to the parent class)
+* meant for simple content
+* no initialization
+
+### 8.5 Use dropdowns
+* can use with navs, tabs and buttons
+* two parts: button/nav trigger and the content itself
+* dropdown dropup (parent classes)
+* dropdown-toggle (goes onto the button, also need to set the data-toggle attribute)
+* dropdown-toggle-split (make a selection using the triangle, then confirm by clicking the button)
+* dropdown-menu dropdown-menu-right(goes into the parent menu div)
+* dropdown-item dropdown-link (goes inside an a or a button tag)
+* dropdown-header dropdown-divider disabled (go inside a div)
+
+### 8.6 Add collapse accordions
+* accordions: one item shows, another item hides
+* requires container, add show class once, add dropdown-menu, typically used with card
+* use data-parent to set the parent container class in each of the children
+* use data-target with a button or href with a link
+
+### 8.7 Use modals
+* use inside a button or a link
+* add fade for animation
+* data-toggle="modal" data-dismiss="modal" (add to the element that closes the modal)
+* modal-sm/lg/xl modal-content modal-title modal-header modal-body modal-footer
+* modal-dialog (additional space) modal-dialog-centered (center vertically) modal-dialog-scrollable
+* modal-body child of modal-content which is child of modal-dialog
+
+### 8.8 Build carousels
+* carousel carousel-fade (fade one into another) slide (move from right to left)
+ride (start animation or not) interval pause (on hover) touch keyboard wrap (advance to first from last)
+* carousel-inner carousel-item (contain images with d-block w-100) active
+* carousel-caption d-none d-md-block
+* carousel-control-prev/next carousel-control-prev/next-icon (uses tagret of the original container,
+data-slide="prev")
+* carousel-indicators (inside ol, each item is an li, data-target="target" data-slide-to="0")
+* carousel-item child of carousel-inner which is child of carousel
+
+### 8.9 Use scrollspy
+* data-spy="scroll" on the container of the element on which to track the scroll
+* position: relative, data-target="ID" (e.g. id of the navbar)
+
+### 8.10 Toasts
+* notification-style boxes
+* toast toast-header toast-body
+* data-animation data-autohide data-delay (ms)
+* data-dismiss="toast"
+* need to activate using javascript and position manually using the style attribute
+
+### 8.11 Spinners
+* give feedback to the user while they are waiting
+* spinner-border/grow-sm
+* text-color
+* trigger show/hide based on events (.addClass/.removeClass d-none)
+
+### 8.12 Pagination
+* pagination (goes inside ul)
+* page-item disabled active page-link (go inside li and a)
+* justify-content-center
+* all wrapped inside a nav
+
+### 8.13 Stretched links
+* to have the entire parent element clickable to the same destination as one of its children
+* one option is to wrap an anchor tag around the entire element
+* stretched-link (add to an a element used in cards, columns but not media elements)
+* use only with immediate parent
+
+### 8.14 Embeds
+* create a container around the embed (i.e. wrapped around the iframe tag)
+* embed-responsive
+* embed-responsive-21by9/16by9/4by3/1by1 (add both)
+* embed-responsive-item (can add to the iframe itself, just a recomendation)
+
+## Next Steps
+* Website, Slack channel
+
 ## Additional Notes
 * https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
 * `Set-ExecutionPolicy -Scope LocalMachine Unrestricted`
@@ -316,3 +419,6 @@ goes on the parent class, label needs to become a d-block class)
 * `<img src="" style="width:80px;" alt="">`
 * `<d-none d-xl-inline-block>` to make things appear/disappear
 * data attributes typically correspond to something with JavaScript
+* button class="close" is one way to give the button proper close look, but also need to
+add `&times;` to the content itself
+* `<class="sr-only">` is for screen-readers only
