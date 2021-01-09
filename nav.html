@@ -8,12 +8,20 @@
         <div class="collapse navbar-collapse" id="toggleNav">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="/">Home</a>
-                <a class="nav-item nav-link" href="/education/">Education</a>
                 <a class="nav-item nav-link" href="/projects/">Projects</a>
                 <a class="nav-item nav-link" href="/experience/">Experience</a>
+                <a class="nav-item nav-link" href="/education/">Education</a>
+                <a class="nav-item nav-link" href="/skills/">Technical Skills</a>
                 <a class="nav-item nav-link" href="/hobbies/">Hobbies</a>
-                <a class="nav-item nav-link" href="/contact/">Contact</a>
             </div>
         </div>
     </nav>
+
+    <script>
+        for (var i = 0; i < document.links.length; i++) {
+        if (document.links[i].href == document.URL)
+            document.links[i].className += " active";
+        }
+    </script>
+    <!-- https://www.sitepoint.com/community/t/highlight-the-active-link-in-a-navigation-menu/38169 -->
 </div>
