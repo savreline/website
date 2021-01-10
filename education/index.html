@@ -11,15 +11,6 @@
       crossorigin="anonymous"></script>
     <script src="/script.js"></script>
 
-    <!-- page-specific scripts -->
-    <script> 
-      function toggleCourses(obj) {
-        obj.innerHTML = (obj.innerHTML == 'Hide Selected Courses') ? 
-                                        'Show Selected Courses' : 
-                                        'Hide Selected Courses' ;
-      }    
-    </script>
-
     <div id="header"></div>
     <title>Sasha Avreline: Education</title>
   </head>
@@ -39,7 +30,7 @@
                     <div class="col text-right">
                         <span class="badge-pill badge-secondary pb-1 lgtext">GPA: 90.0%</span><br>
                         <div class="mt-2 lgtext">
-                            <a onClick="javascript:toggleCourses(this);" 
+                            <a onClick="javascript:toggle(this, courses);" 
                                 class="text-reset" href="#" data-toggle="collapse" data-target="#bcsCourses">
                                 Show Selected Courses
                             </a>
@@ -101,7 +92,7 @@
                     <div class="col text-right">
                         <span class="badge-pill badge-secondary pb-1 lgtext">GPA: 82.9%</span><br>
                         <div class="mt-2 lgtext">
-                            <a onClick="javascript:toggleCourses(this);" 
+                            <a onClick="javascript:toggle(this, courses);" 
                                 class="text-reset" href="#" data-toggle="collapse" data-target="#mathCourses">
                                 Show Selected Courses
                             </a>
@@ -156,7 +147,10 @@
             </div><!-- header -->
 
             <div class="card-body lgtext">
-                Stanford Fleming Foundation John Fisher Award for Leadership awarded at graduation
+                <ul>
+                    <li class="py-1">Stanford Fleming Foundation John Fisher Award for Leadership awarded at graduation.</li>
+                    <li class="py-1">Achieved "outstanding" or "excellent" performance evaluation on all co-op placements.</li>
+                </ul>
             </div>
         </section><!-- BASc -->
     
