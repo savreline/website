@@ -4,3 +4,4 @@ object {pointer-events: none;}
 .llgtext {font-size: 1.2rem;}
 .nav-link {font-size: 1.2rem !important;}
 .rnd-img {border-radius: 20px;}
+.popover { font-size: 1.15rem; max-width: 40%; text-align: justify; }

@@ -11,7 +11,13 @@
       crossorigin="anonymous"></script>
     <script src="/script.js"></script>
 
-    <div id="header"></div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+        crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css" media="screen">
     <title>Sasha Avreline: Education</title>
   </head>
   <body>
@@ -148,18 +154,34 @@
 
             <div class="card-body lgtext">
                 <ul class="px-4">
-                    <li class="pb-1"><a 
-                        href="https://uwaterloo.ca/sandford-fleming-foundation/student-awards/awards-graduating-students/"
-                        class="text-reset">
+                    <li class="pb-1">
+                        <a class="text-reset"
+                        data-toggle="popover"
+                        data-placement="bottom"
+                        data-trigger="hover"
+                        data-content="The award is for the student graduating from the undergraduate program who 
+                        have shown outstanding leadership throughout their academic career in activities that 
+                        relate to engineering education.">
                         Sandford Fleming Foundation John Fisher Award</a> for Leadership awarded at graduation.</li>
                     <li class="pt-1">Achieved "outstanding" or "excellent" performance evaluation on all 
-                        <a href="/experience/work#interns" class="text-reset">co-op placements.</a></li>
+                        <a href="/experience/#interns" class="text-reset">co-op placements.</a></li>
                 </ul>
             </div>
         </section><!-- BASc -->
     
     </div><!-- container -->
 
-    <div id="footer"></div>
+    <!-- BootStrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+          $('[data-toggle="popover"]').popover();
+        })
+    </script>
   </body>
 </html>
