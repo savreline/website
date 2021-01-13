@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- load jQuery and elements -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+      crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+        crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css" media="screen">
+    <title>Sasha Avreline: Projects</title>
+  </head>
+  <body>
+    <div id="nav"></div>
+
+    <!-- main content -->
+    <div class="container">
+    
+      <section class="card my-4 shadow">
+        <div class="card-header pb-0">
+          <h4 class="card-title">Chevrotain: a distributed key-value store</h4>
+        </div>
+        <div class="card-body text-justify lgtext">
+          <p>An individual course project for the distributed systems abstractions graduate course. Designed 
+            and implemented three different variants of a replicated, multi-primary key-value store that achieves
+            eventual consistency via conflict-free replicated data types (CRDTs). All inter-replica communication
+            is via RPC.
+            <a href="https://github.com/savreline/chevrotain">GitHub</a></p>
+          <p>Compared the performance of the different variants by subjecting them to various
+            loads while deployed on ten geographically distributed Azure VMs. One of the variants achieved
+            a sub-second latency under a throughput of 10 000 operations per second and out-performed MongoDB's 
+            built-in replication service (which follows the primary-backup model) under this test.
+            <a href="report.pdf">Technical Report</a></p>
+          <p>While working on the project, contributed a new feature and repaired a bug in GoVector, a 
+            UBC distributed system research group's open source Golang library.
+            <a href="https://github.com/DistributedClocks/GoVector">GitHub</a></p>
+          <strong>Golang and MongoDB.</strong> 2020.
+        </div>
+      </section><!-- Chevrotain -->
+
+      <section class="card my-4 shadow">
+        <div class="card-header pb-0">
+          <h4 class="card-title">"What year was that?" trivia game</h4>
+        </div>
+        <div class="card-body text-justify lgtext">
+          <p>A single page web application where users earn points based on how closely they are able 
+            to guess the years in which various world history events took place. Correctness of a user's 
+            guess relative to other user's guesses is shown on a D3.js chart. Communication with the 
+            database is via a server-side API.
+            <a href="https://github.com/savreline/what-year">GitHub</a>
+          </p>
+          <p>The project is deployed on an AWS EC2 instance running Apache2 web server and on MongoDB Atlas.
+            Deployed version can be viewed at:
+            <a href="https://www.whatyear.savreline.com">whatyear.savreline.com</a> 
+          </p>
+          <strong>MERN Stack and D3.js.</strong> A personal project. 2020-2021.
+        </div>
+      </section><!-- what year -->
+
+      <section class="card my-4 shadow">
+        <div class="card-header pb-0">
+          <h4 class="card-title">Operating system mini-kernel</h4>
+        </div>
+        <div class="card-body text-justify lgtext">
+          <p>A course project for the advanced operating systems course. Implemented an operating system
+            mini-kernel consisting of memory management, process scheduling, process communication and a
+            keyboard device driver.</p>
+          <strong>C and X86-32 assembly.</strong> Done in pairs. 2019.
+        </div>
+      </section><!-- os kernel -->
+
+      <section class="card my-4 shadow">
+        <div class="card-header pb-0">
+          <h4 class="card-title">Mini-Java compiler</h4>
+        </div>
+        <div class="card-body text-justify lgtext">
+          <p>A course project for the introduction to compilers course. Implemented a compiler 
+            for a subset of the Java PL consisting of a parser, type checker, translator to intermediate
+            representation, instruction selector and a register allocator.</p>
+          <strong>Java and X86-64 assembly.</strong> Done in groups of three. 2019.
+        </div>
+      </section><!-- mini Java -->
+
+      <section class="card my-4 shadow">
+        <div class="card-header pb-0">
+          <h4 class="card-title">Course notes on algorithms</h4>
+        </div>
+        <div class="card-body text-justify lgtext">
+          <p>A comprehensive set of course notes developed for students taking UBC's CPSC 320 course
+            entitled "Intermediate Algorithm Design and Analysis". Topics include stable matching problem,
+            graph algorithms, greedy algorithms, divide and conquer, dynamic programming and NP-completeness.
+          </p>
+          <p>
+            Notes have been referenced by several cohorts of students taking CPSC 320 and 
+            were found to be a very effective study supplement.
+            <a href="320notes.pdf">PDF</a>
+          </p>
+          A personal project. 2019-2020.
+        </div>
+      </section><!-- 320 -->
+
+      <section class="card my-4 shadow">
+        <div class="card-header pb-0">
+          <h4 class="card-title">Video tutorials and notes on C/C++</h4>
+        </div>
+        <div class="card-body text-justify lgtext">
+          <p>A set of C++ video tutorials to help UBC students taking the data structures and algorithms
+            course in C++ to quickly get up-to-speed with to C++ after having learned Java in an earlier course.
+            <a href="https://youtube.com/playlist?list=PL95pE3U4irsbVDpYt2H_rbL1MN4FaZgbN">YouTube Playlist</a> |
+            <a href="https://github.com/savreline/tutorials/tree/master/cpp">GitHub</a>
+          </p>
+          <p>A set of tutorials that illustrate certain subtleties (for example, tough to find
+            memory leaks) and common errors of programming in C. 
+            <a href="SubtletiesOfC.pdf">PDF</a> |
+            <a href="https://github.com/savreline/tutorials/tree/master/c">GitHub</a>
+          </p>
+          Part completed while employed as a <a href="/experience/" class="text-reset">BCS teaching assistant</a>,
+           part is a personal project. 2019-2020.
+        </div>
+      </section><!-- C/C++ -->
+  
+    </div><!-- container -->
+
+    <!-- BootStrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+        crossorigin="anonymous"></script>
+  </body>
+</html>
