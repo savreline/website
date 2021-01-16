@@ -35,7 +35,7 @@
           <p>Designed and implemented in Golang three different variants of a replicated, multi-primary key-value
             store that achieves eventual consistency via conflict-free replicated data types (CRDTs).
             The underlying database is MongoDB, all inter-replica communication is via RPC.</p>
-          <p>Compared the performance of the different variants by subjecting them to various
+          <p>Compared the performance of the different design approaches by subjecting them to various
             loads while deployed on ten geographically distributed Azure VMs. One of the variants achieved
             a sub-second latency under a throughput of 10 000 operations per second and out-performed MongoDB's 
             built-in replication service (which follows the primary-backup model) under this test.</p>
@@ -54,9 +54,9 @@
           <p class="card-subtitle">Personal Project. 2020-2021.</p>
         </div>
         <div class="card-body text-justify lgtext pb-0">
-          <p>A MERN stack single page web application where users earn points based on how closely they are
-            able to guess the years in which various world history events took place. Correctness of a user's 
-            guess relative to other user's guesses is shown on a D3.js chart. Communication with the database
+          <p>A MERN stack single page web application where players earn points based on how well they are
+            able to guess the years in which various world history events took place. Correctness of a player's 
+            guess relative to other player's guesses is shown on a D3.js chart. Communication with the database
             is via a server-side API.</p>
           <p>The project is deployed on an AWS EC2 instance running Apache2 web server and on MongoDB Atlas.
             Deployed version can be viewed at:
