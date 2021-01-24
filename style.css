@@ -5,6 +5,6 @@ object {pointer-events: none;}
 .nav-link {font-size: 1.2rem !important;}
 .rnd-img {border-radius: 20px;}
 .popover { font-size: 1.15rem; max-width: 40%; text-align: justify; }
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
   .textalign { text-align: justify; }
 }
