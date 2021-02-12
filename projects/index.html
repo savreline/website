@@ -38,9 +38,9 @@
           <p>Compared the performance of the different design approaches by subjecting them to various
             loads while deployed on ten geographically distributed Azure VMs. One of the variants achieved
             a sub-second latency under a throughput of 10 000 operations per second and out-performed MongoDB's 
-            built-in replication service (which follows the primary-backup model) under this test.</p>
-          <p>While working on the project, contributed a new feature and repaired a bug in GoVector, a 
-            UBC distributed system research group's open source Golang library.</p>
+            built-in primary-backup replication service under this test.</p>
+          <p>While working on the project, added a new feature and repaired a bug in GoVector, a 
+            UBC distributed system research group's open source Golang library (PRs under review).</p>
           <p><a href="https://github.com/savreline/chevrotain">Project's GitHub</a> |
             <a href="report.pdf">Technical Report</a> |
             <a href="https://github.com/DistributedClocks/GoVector">GoVector's GitHub</a>
@@ -73,7 +73,7 @@
         </div>
         <div class="card-body textalign lgtext pb-0">
           <p>Implemented in C and X86-32 assembly an operating system mini-kernel consisting of memory management,
-            process scheduling, process communication and a keyboard device driver.</p>
+            process scheduling, inter-process communication, a simple shell and a keyboard device driver.</p>
         </div>
       </section><!-- os kernel -->
 
