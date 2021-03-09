@@ -32,15 +32,15 @@
           <p class="card-subtitle">Distributed systems graduate course individual course project. 2020.</p>
         </div>
         <div class="card-body textalign lgtext pb-0">
-          <p>Designed and implemented in Golang three different variants of a replicated, multi-primary key-value
+          <p>Designed and implemented in Go three different variants of a replicated, multi-primary key-value
             store that achieves eventual consistency via conflict-free replicated data types (CRDTs).
             The underlying database is MongoDB, all inter-replica communication is via RPC.</p>
-          <p>Compared the performance of the different design approaches by subjecting them to various
-            loads while deployed on ten geographically distributed Azure VMs. One of the variants achieved
+          <p>Compared the performance of the three variants by subjecting them to various
+            loads while they were deployed on ten geographically distributed Azure VMs. One of the variants achieved
             a sub-second latency under a throughput of 10 000 operations per second and, as per one metric, 
-            out-performed MongoDB's built-in replication service under this test.</p>
+            outperformed MongoDB's built-in replication service under this test.</p>
           <p>While working on the project, added a new feature and repaired a bug in GoVector, a 
-            UBC distributed systems research group's open source Golang library (PRs under review).</p>
+            UBC distributed systems research group's open source Go library (PRs under review).</p>
           <p><a href="https://github.com/savreline/chevrotain">Project's GitHub</a> |
             <a href="report.pdf">Technical Report</a> |
             <a href="https://github.com/DistributedClocks/GoVector">GoVector's GitHub</a>
@@ -56,7 +56,7 @@
         <div class="card-body textalign lgtext pb-0">
           <p>A MERN stack single-page web application where players earn points based on how well they can guess 
             the years in which various world history events took place. Correctness of a player's 
-            guess relative to other player's guesses is shown on a D3.js chart. Communication with the database
+            guess relative to other players' guesses is shown on a D3.js chart. Communication with the database
             is via a server-side API.</p>
           <p>The project is deployed on an AWS EC2 instance running Apache2 web server and on MongoDB Atlas.
             Deployed version can be viewed at:
